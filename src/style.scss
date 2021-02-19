@@ -1,0 +1,100 @@
+$pink: #F08080;
+$lightblue: #ADD8E6;
+$yellow: #FFA500;
+$green: #026E00;
+$white: white;
+$text-color: black;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 30px;
+  font-weight: bold;
+  color: $text-color;
+  text-align: center;
+  span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header{
+    height: 80px;
+    width: 100vw;
+    background-color: $pink;
+    position: relative;
+  }
+  main{
+    width: 100vw;
+    height: calc(100vh - 160px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .left-column{
+      width: 300px;
+      height: 100%;
+      background-color: $lightblue;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      .top-left-column{
+        height: 47%;
+        width: 90%;
+        background-color: $white;
+        position: relative;
+      }
+      .bottom-left-column{
+        height: 47%;
+        width: 90%;
+        background-color: $white;
+        position: relative;
+      }
+    }
+    .middle-column{
+      width: 100%;
+      height: 100%;
+      background-color: $yellow;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      .inner-middle-column{
+        height: 47%;
+        width: 47%;
+        background-color: $green;
+        position: relative;
+      }
+    }
+    .right-column{
+      width: 300px;
+      height: 100%;
+      background-color: $lightblue;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      .top-right-column{
+        height: 47%;
+        width: 90%;
+        background-color: $white;
+        position: relative;
+      }
+      .bottom-right-column{
+        height: 47%;
+        width: 90%;
+        background-color: $white;
+        position: relative;
+      }
+    }
+  }
+  footer{
+    height: 80px;
+    width: 100vw;
+    background-color: $pink;
+    position: relative;
+  }
+}
